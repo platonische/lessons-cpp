@@ -19,6 +19,5 @@ int main()
 //      lesson5f4();
       lesson5f5();
 
-
     return 0;
 }
