@@ -19,5 +19,7 @@ int main()
 //      lesson5f4();
       lesson5f5();
 
+
+      cout << "sda";
     return 0;
 }
