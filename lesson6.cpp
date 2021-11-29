@@ -1,5 +1,4 @@
 #include <iostream>
-//#include <QTextStream>
 
 using namespace std;
 
@@ -7,17 +6,11 @@ void lesson6f1()
 {
 
     setlocale(LC_ALL, "Russian");
-//    QTextStream qin(stdin);
-//    QTextStream qout(stdout);
 
     int c = 5;
 
     int s = 0;
     char* current = (char *)&s;
-
-
-
-
 
     cout << "Введите буквы, "<< c << " шт."  << endl;
 
@@ -85,4 +78,32 @@ void lesson6f3()
     }
 
     pM = NULL;
+}
+
+void lesson6f4()
+{
+    cout << "F4" << endl;
+
+    int n, total;
+    n = 5;
+    int* pM;
+    pM = new int[n];
+
+    total = n;
+
+    for (int i = 0; i < total; i++) {
+        pM[i] = i;
+    }
+
+    for (int i = 0; i < total; i++) {
+        cout << pM[i] << endl;
+    }
+
+    for (int i = 0; i < total; i++) {
+        cout << *(pM+i) << endl;
+    }
+
+    delete [] pM;
+    pM = NULL;
+
 }

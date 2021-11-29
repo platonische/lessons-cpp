@@ -22,8 +22,8 @@ int main()
 //      lesson5f5();
 //      lesson6f1();
 //      lesson6f2();
-    lesson6f3();
-
+//    lesson6f3();
+    lesson6f4();
 
 //      cout << "sda";
     return 0;
