@@ -46,7 +46,43 @@ void lesson6f2()
     cout << sizeof(Mass1) << endl;
     cout << sizeof(Mass2) << endl;
     cout << sizeof(Mass3) << endl;
-    cin >> s;
-    cout << s << endl;
+//    cin >> s;
 
+
+
+
+    char *pMas2 = new char[10];
+
+    delete [] pMas2;
+}
+
+void lesson6f3()
+{
+    int n, total;
+
+    cout << "Enter digit for array size: ";
+    cin >> n;
+
+    int* pM;
+    pM = new int[n];
+
+    total = n;
+
+    for (int i = 0; i < total; i++) {
+        pM[i] = i;
+    }
+
+    cout << "Dynamic array: " << endl;
+    for (int i = 0; i < total; i++) {
+        cout << pM[i] << endl;
+    }
+
+    delete [] pM;
+
+    cout << "Trash array: " << endl;
+    for (int i = 0; i < total; i++) {
+        cout << pM[i] << endl;
+    }
+
+    pM = NULL;
 }
