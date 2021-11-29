@@ -59,7 +59,10 @@ void lesson6f3()
     int* pM;
     pM = new int[n];
 
-    total = n;
+    total = sizeof(pM);
+    //total = n;
+
+    cout << total << endl;
 
     for (int i = 0; i < total; i++) {
         pM[i] = i;
@@ -106,4 +109,17 @@ void lesson6f4()
     delete [] pM;
     pM = NULL;
 
+}
+
+void lesson6f5()
+{
+    const char *String1 = "ewrew";
+    char *String2 = {"ewrew"};
+    char *String3("ewrew");
+
+    char str[] = "1234";
+    cout << sizeof(str) << endl;
+    cout << sizeof(String1) << endl;
+    cout << sizeof(String2) << endl;
+    cout << sizeof(String3) << endl;
 }
