@@ -5,6 +5,7 @@
 #include <lesson5.cpp>
 #include <lesson6.cpp>
 #include <lesson6hw.cpp>
+#include <lesson7.cpp>
 
 using namespace std;
 
@@ -26,7 +27,9 @@ int main()
 //    lesson6f3();
 //    lesson6f4();
 //    lesson6f5();
-    initLesson6Hw();
+//    initLesson6Hw();
+
+    lesson7();
 
     return 0;
 }
