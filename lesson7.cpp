@@ -7,10 +7,13 @@ void lesson7f2();
 void lesson7f3();
 void lesson7f4();
 void lesson7f5();
+void lesson7HW1();
+
+unsigned short int counter = 0;
 
 void lesson7()
 {
-    lesson7f5();
+    lesson7HW1();
 }
 
 void lesson7f1()
@@ -98,5 +101,85 @@ void lesson7f5()
     }
 
     cout << Max << endl;
+
+}
+
+
+/**
+ * Поменять местами минимальное и максимальное значение
+ *
+ * @brief outMass
+ * @param Arr
+ * @param deep
+ */
+void outMass(int *Arr, int deep)
+{
+
+    counter++;
+
+    cout << "Прогон: " << counter << " ------------------------------- " << endl;
+
+    for (int i=0; i<deep; i++) {
+        for (int j=0; j<deep; j++) {
+            cout << *(Arr+i*deep+j) << "\t";
+        }
+        cout << endl;
+    }
+
+    cout << "------------------------------- " << " Конец: " << counter << endl;
+
+}
+
+int doChangeMass(int *Arr, int deep)
+{
+    int Max = *Arr, Min = *Arr;
+    int MaxInd = 0, MinInd = 0;
+    for (int i=0; i<deep; i++) {
+        for (int j=0; j<deep; j++) {
+            if (Max < *(Arr+i*deep+j)) {
+                Max = *(Arr+i*deep+j);
+                MaxInd = i*deep+j;
+            }
+            if (Min > *(Arr+i*deep+j)) {
+                Min = *(Arr+i*deep+j);
+                MinInd = i*deep+j;
+            }
+        }
+    }
+    *(Arr+MinInd) = Max;
+    *(Arr+MaxInd) = Min;
+    return 0;
+}
+
+int doChangeMass2(int *Arr, int deep)
+{
+    int *Max = Arr, *Min = Arr;
+    for (int i=0; i<deep; i++) {
+        for (int j=0; j<deep; j++) {
+            if (*Max < *(Arr+i*deep+j)) {
+                Max = Arr+i*deep+j;
+            }
+            if (*Min > *(Arr+i*deep+j)) {
+                Min = Arr+i*deep+j;
+            }
+        }
+    }
+    *(Min) = *(Max);
+    *(Max) = *(Min);
+    return 0;
+}
+
+
+void lesson7HW1()
+{
+
+    int Mass[3][3] = {{11,2,36},{14,15,61},{27,82,29}};
+    int Max = Mass[0][0], Min = Mass[0][0];
+    int deep = 3;
+    outMass(&Mass[0][0], deep);
+    //doChangeMass(&Mass[0][0], deep);
+    doChangeMass2(&Mass[0][0], deep);
+    outMass(&Mass[0][0], deep);
+
 
 }
