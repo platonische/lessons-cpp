@@ -7,11 +7,13 @@ typedef struct MyStruct {
     int Y;
 } aliasB;
 
+
 void lesson9f1();
+
 
 void lesson9()
 {
-    lesson9f1();
+   lesson9f1();
 }
 
 void lesson9f1()
@@ -28,3 +30,8 @@ void lesson9f1()
     cout << B.Y << endl;
 
 }
+
+
+
+
+

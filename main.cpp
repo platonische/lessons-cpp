@@ -7,6 +7,7 @@
 #include <lesson6hw.cpp>
 #include <lesson7.cpp>
 #include <lesson8.cpp>
+#include <lesson8hw.cpp>
 #include <lesson9.cpp>
 
 using namespace std;
@@ -31,8 +32,9 @@ int main()
 //    lesson6f5();
 //    initLesson6Hw();
 
-    lesson7();
+//    lesson7();
 //    lesson8();
+    lesson8hw();
 //    lesson9();
 
     return 0;

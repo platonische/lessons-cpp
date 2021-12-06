@@ -22,6 +22,7 @@ SOURCES += \
         lesson6hw.cpp \
         lesson7.cpp \
         lesson8.cpp \
+        lesson8hw.cpp \
         lesson9.cpp \
         main.cpp
 
