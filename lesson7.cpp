@@ -154,6 +154,7 @@ int doChangeMass(int *Arr, int deep)
 int doChangeMass2(int *Arr, int deep)
 {
     int *Max = Arr, *Min = Arr;
+
     for (int i=0; i<deep; i++) {
         for (int j=0; j<deep; j++) {
             if (*Max < *(Arr+i*deep+j)) {
@@ -164,8 +165,37 @@ int doChangeMass2(int *Arr, int deep)
             }
         }
     }
-    *(Min) = *(Max);
-    *(Max) = *(Min);
+
+    // Интересная манипуляция с 2 яцейками и расчетами для 2 единиц
+    *(Max) = *(Max) - *(Min);   // В max положили разницу max-min
+    *(Min) = *(Max) + *(Min);   // В min положили разницу + мин => max
+    *(Max) = *(Min) - *(Max);   // в max положили max - разницу => min
+
+    return 0;
+}
+
+
+//Доработать т.к. надо возвращать данные
+int doChangeMass3(int *Arr, int deep)
+{
+    int Max = Arr[0], Min = Arr[0];
+
+    for (int i=0; i<deep; i++) {
+        for (int j=0; j<deep; j++) {
+            if (Max < Arr[i*deep+j]) {
+                Max = Arr[i*deep+j];
+            }
+            if (Min > Arr[i*deep+j]) {
+                Min = Arr[i*deep+j];
+            }
+        }
+    }
+
+    // Интересная манипуляция с 2 яцейками и расчетами для 2 единиц
+    Max = Max - Min;   // В max положили разницу max-min
+    Min = Max + Min;   // В min положили разницу + мин => max
+    Max = Min - Max;   // в max положили max - разницу => min
+
     return 0;
 }
 
@@ -174,11 +204,12 @@ void lesson7HW1()
 {
 
     int Mass[3][3] = {{11,2,36},{14,15,61},{27,82,29}};
-    int Max = Mass[0][0], Min = Mass[0][0];
     int deep = 3;
     outMass(&Mass[0][0], deep);
     //doChangeMass(&Mass[0][0], deep);
-    doChangeMass2(&Mass[0][0], deep);
+    //doChangeMass2(&Mass[0][0], deep);
+    doChangeMass2((int *)Mass, deep);
+    //doChangeMass3((int *)Mass, deep);
     outMass(&Mass[0][0], deep);
 
 

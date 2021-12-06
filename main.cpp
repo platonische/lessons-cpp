@@ -6,6 +6,8 @@
 #include <lesson6.cpp>
 #include <lesson6hw.cpp>
 #include <lesson7.cpp>
+#include <lesson8.cpp>
+#include <lesson9.cpp>
 
 using namespace std;
 
@@ -30,6 +32,8 @@ int main()
 //    initLesson6Hw();
 
     lesson7();
+//    lesson8();
+//    lesson9();
 
     return 0;
 }

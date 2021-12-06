@@ -21,6 +21,8 @@ SOURCES += \
         lesson6.cpp \
         lesson6hw.cpp \
         lesson7.cpp \
+        lesson8.cpp \
+        lesson9.cpp \
         main.cpp
 
 # Default rules for deployment.
