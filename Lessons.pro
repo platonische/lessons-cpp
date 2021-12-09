@@ -16,6 +16,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         firstLessons.cpp \
+        lesson10.cpp \
         lesson4.cpp \
         lesson5.cpp \
         lesson6.cpp \
