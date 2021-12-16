@@ -20,6 +20,11 @@ bool MyClass1::getSpace()
 {
     return _space;
 }
+int MyClass1::getId()
+{
+    return _id;
+}
+
 
 void MyClass1::setName(char* Name)
 {
@@ -64,4 +69,9 @@ string MyClass1::__toString()
     str += "-----------------------------------\n";
 
     return str;
+}
+
+~MyClass1::MyClass1()
+{
+
 }
