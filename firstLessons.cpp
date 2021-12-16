@@ -20,11 +20,11 @@ void Alesson2()
 }
 
 
-void MyFunc(int x, int y = 0)
-{
-    x *= 2;
-    cout << x;
-}
+//void MyFunc(int x, int y = 0)
+//{
+//    x *= 2;
+//    cout << x;
+//}
 
 int st(int digit, int st)
 {

@@ -7,14 +7,15 @@ void lesson10f1();
 void lesson10f2();
 void lesson10f3();
 void lesson10f4();
+void lesson10f5();
 void TwoInt(int, int);
 void lTwoInt(int &, int &);
 void TwoInt(int*, int*);
 
 void lesson10()
 {
-    lesson10f3();
-    lesson10f4();
+
+    lesson10f5();
 }
 
 void lesson10f1()
@@ -110,4 +111,20 @@ void lesson10f4()
     lTwoInt(lA,lB);
     TwoInt(pA,pB);
     lTwoInt(lA,lB);
+}
+
+void lesson10f5()
+{
+
+    int a; for(a = 0; a < 10; a++) {
+        cout <<a <<endl;
+    }
+    cout <<a <<endl;
+
+    int x = 0;
+        switch(x)        {
+          case 1: cout << "Один";
+          case 0: cout << "Нуль";
+          case 2: cout << "Привет мир";
+        }
 }
