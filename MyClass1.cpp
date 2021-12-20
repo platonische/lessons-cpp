@@ -71,7 +71,7 @@ string MyClass1::__toString()
     return str;
 }
 
-~MyClass1::MyClass1()
+MyClass1::~MyClass1()
 {
 
 }

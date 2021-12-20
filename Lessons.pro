@@ -16,6 +16,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         MyClass1.cpp \
+        MySubClass1.cpp \
+        MySubClass2.cpp \
         firstLessons.cpp \
         lesson10.cpp \
         lesson11.cpp \
@@ -27,7 +29,13 @@ SOURCES += \
         lesson8.cpp \
         lesson8hw.cpp \
         lesson9.cpp \
-        main.cpp
+        main.cpp \
+        src/first/Bar.cpp \
+        src/first/Base.cpp \
+        src/first/Base.cpp \
+        src/first/ClassA.cpp \
+        src/first/ClassB.cpp \
+        src/first/Foo.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -35,6 +43,15 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    MyClass1.h
+    MyClass1.h \
+    MySubClass1.h \
+    MySubClass2.h \
+    src/first/Bar.h \
+    src/first/Base.h \
+    src/first/Base.h \
+    src/first/Base.h \
+    src/first/ClassA.h \
+    src/first/ClassB.h \
+    src/first/Foo.h
 
 QT += widgets
