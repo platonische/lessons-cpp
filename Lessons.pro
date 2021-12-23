@@ -52,6 +52,10 @@ HEADERS += \
     src/first/Base.h \
     src/first/ClassA.h \
     src/first/ClassB.h \
-    src/first/Foo.h
+    src/first/Foo.h \
+    src/second/A.h \
+    src/second/B.h \
+    src/second/Child.h \
+    src/second/Parrent.h
 
 QT += widgets

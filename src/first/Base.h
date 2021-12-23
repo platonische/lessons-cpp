@@ -10,13 +10,13 @@ private:
     Driver* _driver;
 
 public:
-    template<class Driver>
-    Base(int path, int type)
-    {
-        _path = path;
-        _type = type;
-        _driver = new Driver();
-    };
+//    template<class Driver>
+//    Base(int path, int type)
+//    {
+//        _path = path;
+//        _type = type;
+//        _driver = new Driver();
+//    };
 };
 
 #endif // BASE_H

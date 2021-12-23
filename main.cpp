@@ -21,24 +21,35 @@
 #include "src/first/ClassA.h"
 #include "src/first/ClassB.h"
 
+#include "src/second/Parrent.h"
+#include "src/second/Child.h"
+#include "src/second/A.h"
+#include "src/second/B.h"
+
 using namespace std;
 
-Foo* pA;
+
 
 int main()
 {
 
 
+Parrent* pObj = new Child();
+//Parrent* pObj = new Parrent();
+pObj->execute();
+pObj->executePrPub();
+pObj->~Parrent();
 
 
-    {
-        Foo A(56);
-        cout << A.pVar[0] << endl;
-        pA = &A;
-        cout << pA->pVar[0] << endl;
-        //A.~Foo();
-    }
-    cout << pA->pVar[0] << endl;
+//  Foo* pA;
+//    {
+//        Foo A(56);
+//        cout << A.pVar[0] << endl;
+//        pA = &A;
+//        cout << pA->pVar[0] << endl;
+//        //A.~Foo();
+//    }
+//    cout << pA->pVar[0] << endl;
 
 //    lesson4();
 //    HW4();
