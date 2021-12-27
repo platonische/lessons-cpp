@@ -25,20 +25,34 @@
 #include "src/second/Child.h"
 #include "src/second/A.h"
 #include "src/second/B.h"
+#include "src/Core/Core.h"
+#include "src/Core/pChar.h"
+#include "src/MatrixCycle/MatrixCycle.h"
+
 
 using namespace std;
 
 
+//Core* myVar = new Core;
 
 int main()
 {
+    int digit = 7;
+    MatrixCycle* MC = new MatrixCycle(digit);
+//    MC->fillArray();
+    MC->__toString();
+
+//myVar->setup();
+//cout << myVar->log.logBt->get() << endl;
 
 
-Parrent* pObj = new Child();
-//Parrent* pObj = new Parrent();
-pObj->execute();
-pObj->executePrPub();
-pObj->~Parrent();
+
+//Child* pObj = new Child();
+////Parrent* pObj = new Parrent();
+//pObj->ppp();
+//pObj->execute();
+//pObj->executePrPub();
+////pObj->~Parrent();
 
 
 //  Foo* pA;

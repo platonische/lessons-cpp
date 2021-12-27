@@ -20,6 +20,9 @@ public:
     void virtual execute(){
         cout << "I'm Parrent\n";
     }
+    void ppp(){
+        cout << "I'm ppp\n";
+    }
     void virtual executePrPub() {
         executePr();
     };

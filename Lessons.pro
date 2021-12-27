@@ -30,12 +30,14 @@ SOURCES += \
         lesson8hw.cpp \
         lesson9.cpp \
         main.cpp \
+        src/MatrixCycle/MatrixCycle.cpp \
         src/first/Bar.cpp \
         src/first/Base.cpp \
         src/first/Base.cpp \
         src/first/ClassA.cpp \
         src/first/ClassB.cpp \
-        src/first/Foo.cpp
+        src/first/Foo.cpp \
+        src/test/Test3.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -46,6 +48,7 @@ HEADERS += \
     MyClass1.h \
     MySubClass1.h \
     MySubClass2.h \
+    src/MatrixCycle/MatrixCycle.h \
     src/first/Bar.h \
     src/first/Base.h \
     src/first/Base.h \
@@ -56,6 +59,7 @@ HEADERS += \
     src/second/A.h \
     src/second/B.h \
     src/second/Child.h \
-    src/second/Parrent.h
+    src/second/Parrent.h \
+    src/test/Test3.h
 
 QT += widgets
