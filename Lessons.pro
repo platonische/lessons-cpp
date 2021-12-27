@@ -30,6 +30,7 @@ SOURCES += \
         lesson8hw.cpp \
         lesson9.cpp \
         main.cpp \
+        src/MatrixCycle/MC2.cpp \
         src/MatrixCycle/MatrixCycle.cpp \
         src/first/Bar.cpp \
         src/first/Base.cpp \
@@ -48,6 +49,7 @@ HEADERS += \
     MyClass1.h \
     MySubClass1.h \
     MySubClass2.h \
+    src/MatrixCycle/MC2.h \
     src/MatrixCycle/MatrixCycle.h \
     src/first/Bar.h \
     src/first/Base.h \

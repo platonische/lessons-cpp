@@ -28,6 +28,7 @@
 #include "src/Core/Core.h"
 #include "src/Core/pChar.h"
 #include "src/MatrixCycle/MatrixCycle.h"
+#include "src/MatrixCycle/MC2.h"
 
 
 using namespace std;
@@ -37,10 +38,12 @@ using namespace std;
 
 int main()
 {
-    int digit = 7;
-    MatrixCycle* MC = new MatrixCycle(digit);
-//    MC->fillArray();
-    MC->__toString();
+    int digit = 8;
+//    MatrixCycle* MC = new MatrixCycle(digit);
+//    MC->__toString();
+
+    MC2* MCfast = new MC2(digit);
+    MCfast->__toString();
 
 //myVar->setup();
 //cout << myVar->log.logBt->get() << endl;
